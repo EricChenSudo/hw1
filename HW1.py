@@ -32,7 +32,7 @@ with open(cwb_filename) as csvfile:
 # first, preprocessing the data. 
 # In TEMP column, change '-99.000' or '-999.00' with 'None'
 for i in range(len(data)):
-    if data[i]['TEMP'] == '-99.000' or data[i]['TEMP'] == '-990.000':
+    if data[i]['TEMP'] == '-99.000' or data[i]['TEMP'] == '-999.000':
         data[i]['TEMP'] = 'None'
 
 # target_data will be used to store the answer, so we need to get the space first.
